@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
+
+.body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.a {
+    color: whitesmoke;
+    text-decoration: solid;
+}
+
+#header div {
+    border-bottom: thin solid white;
+}
+
+#header {
+    background-color: rgba(0, 0, 0, 0.0);
+    position: absolute;
+    width: 100%;
+}
+
+#header .logo {
+    margin: 0;
+    padding: 5px 5px;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+
+#header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    font-size: large;
+    font-weight: 10;
+}
+
+#header li {
+    float: left;
+}
+
+#header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#header li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+#header li a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease;
+    font-weight: 400;
+}
+
+.logo img:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease;
+    border-radius: 50%;
+}
+
+#header li.dropdown {
+    display: inline-block;
+}
+
+#header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#header .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+#header .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+#header .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media only screen and (max-width:500px) {
+
+    #header,
+    .img {
+        width: 100%;
+    }
+
+    #header ul {
+        font-size: xx-small;
+    }
+}
+
+.SubTutorial2-main {
+    width: 100%;
+    height: 2000px;
+    background-color: black;
+}
+
+.SubTutorial2-main img {
+    position: absolute;
+    height: 610px;
+    right: 0;
+    left: 525 px;
+    top: 0px;
+}
+
+.content {
+    position: absolute;
+    left: 95px;
+    top: 200px;
+}
+
+.content h1 {
+    font-family: 'Abril Fatface';
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 70px;
+}
+
+.content h1 span {
+    color: #FECF77;
+}
+
+.alat {
+    position: absolute;
+    margin: auto;
+    width: 85vw;
+    height: 500px;
+    top: 696px;
+    margin-left: 66px;
+    padding: 0 30px;
+    /* left: 65px;
+    right: 66px; */
+    /* padding: 0 66px 0 0; */
+    background: linear-gradient(90deg, rgba(43, 88, 118, 0.7) 11.42%, rgba(67, 118, 81, 0.7) 90.99%);
+}
+
+.alat h1 {
+    height: auto;
+    width: 80vw;
+    top: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.alat h1 {
+    font-family: 'Abril Fatface';
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 55px;
+    text-align: center;
+}
+
+.carousel {
+    position: absolute;
+    height: 340px;
+    top: 70px;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel img {
+    width: calc(100% / 3);
+    white-space: inherit;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 30PX;
+}
+
+.ket1 {
+    position: absolute;
+    height: 50px;
+    top: 250px;
+    width: 40vw;
+    margin: auto;
+    left: 20px;
+}
+
+.ket1 h6 {
+    font-family: 'Abril Fatface';
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.ket2 {
+    position: absolute;
+    height: 50px;
+    top: 250px;
+    width: 40vw;
+    margin: auto;
+    left: 450px;
+}
+
+.ket2 h6 {
+    font-family: 'Abril Fatface';
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.ket3 {
+    position: absolute;
+    height: 50px;
+    top: 250px;
+    width: 40vw;
+    margin: auto;
+    left: 870px;
+}
+
+.ket3 h6 {
+    font-family: 'Abril Fatface';
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.ket4 {
+    position: absolute;
+    height: 50px;
+    top: 215px;
+    width: 20vw;
+    margin: auto;
+    left: 1320px;
+}
+
+.ket4 h6 {
+    font-family: 'Abril Fatface';
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 30px; 
+}
+
+.ket5 {
+    position: absolute;
+    height: 50px;
+    top: 250px;
+    width: 20vw;
+    margin: auto;
+    /* left: 1435px; */
+    left: 1800px;
+}
+
+.ket5 h6 {
+    font-family: 'Abril Fatface';
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 30px;
+    
+}
+
+.langkah {
+    position: absolute;
+    margin: auto;
+    width: 85vw;
+    height: 580px;
+    top: 1350px;
+    margin-left: 75px;
+    padding: 0 30px;
+    background: linear-gradient(90deg, rgba(43, 88, 118, 0.7) 11.42%, rgba(67, 118, 81, 0.7) 90.99%);
+}
+
+.langkah h1 {
+    height: auto;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.langkah h1 {
+    font-family: 'Abril Fatface';
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 55px;
+    text-align: center;
+}
+
+/* CAROUSEL 2 */
+
+.carouselin {
+    transform: translateY(0px);
+}
+
+ul.slides {
+    display: block;
+    position: relative;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+ul.slides input {
+    display: none;
+}
+
+
+.slide-container {
+    display: block;
+}
+
+.slide-image {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 240px;
+    top: 100px;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+    align-items: center;
+}
+
+.isi {
+    width: 40%;
+    padding: 5vw;
+}
+
+.slide-image img {
+    width: 50%;
+    height: auto;
+}
+
+.slide-image h3 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+.slide-image h6 {
+    width: 320px;
+    height: 140px;
+}
+
+.slide-image h6 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 100px;
+    line-height: 600px;
+    color: #fff;
+}
+
+.carousel-controls label {
+    display: none;
+    position: absolute;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+.slide-image:hover+.carousel-controls label {
+    opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+    opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+    width: 49%;
+    text-align: left;
+    left: 0;
+}
+
+.carousel-controls .next-slide {
+    width: 49%;
+    text-align: right;
+    right: 0;
+}
+
+.carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 420px;
+    z-index: 999;
+    text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+input:checked+.slide-container .slide-image {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked+.slide-container .carousel-controls label {
+    display: block;
+}
+
+input#img-1:checked~.carousel-dots label#img-dot-1,
+input#img-2:checked~.carousel-dots label#img-dot-2,
+input#img-3:checked~.carousel-dots label#img-dot-3,
+input#img-4:checked~.carousel-dots label#img-dot-4,
+input#img-5:checked~.carousel-dots label#img-dot-5,
+input#img-6:checked~.carousel-dots label#img-dot-6 {
+    opacity: 1;
+}
+
+input:checked+.slide-container .nav label {
+    display: block;
+}
+
+.footer {
+    height: 340px;
+    background: #1B211B;
+    position: absolute;
+    top: 2000px;
+}
+
+.content-footer img {
+    position: absolute;
+    width: 25vw;
+}
+
+.col2 {
+    margin-left: 35vw;
+    margin-top: 100px;
+}
+
+.col2 a {
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.col3 {
+    position: absolute;
+    margin-left: 75vw;
+    color: white;
+    margin-top: 100px;
+}
+
+.footer-title {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+#backButton {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-image: url('Back_Arrow.svg'); /* Replace with the path to your arrow icon */
+    background-size: cover;
+    filter: invert(100%);
+    transition: font-weight 0.2s ease
+  }
+
+  #backButton:hover{
+    filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(20deg);
+  }

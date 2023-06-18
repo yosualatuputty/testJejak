@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background: #000000;
+}
+
+.a {
+    color: whitesmoke;
+    text-decoration: solid;
+}
+
+#header div {
+    border-bottom: thin solid white;
+}
+
+#header {
+    background-color: rgba(0, 0, 0, 0.0);
+    position: absolute;
+    width: 100%;
+}
+
+#header .logo {
+    margin: 0;
+    padding: 5px 5px;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+#header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    font-size: large;
+    font-weight: 10;
+}
+
+#header li {
+    float: left;
+}
+
+#header li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#header li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+#header li a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease;
+    font-weight: 400;
+}
+
+.logo img:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease;
+    border-radius: 50%;
+}
+
+#header li.dropdown {
+    display: inline-block;
+}
+
+#header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#header .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+#header .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+#header .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.gambarHeader img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    object-fit: contain;
+}
+
+.gambarHeader h1{
+    position: absolute;
+    width: 379px;
+    height: 115px;
+    left: 149px;
+    top: 300px;
+
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 115px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+
+.alam{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 13px;
+
+    position: absolute;
+    width: 702px;
+    height: 131px;
+    left: 149px;
+    top: 677px;
+
+}
+
+.alam h1{
+    width: 413px;
+    height: 88px;
+
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 88px;
+    /* identical to box height */
+    color: #A3C556;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.alam p{
+    width: 702px;
+    height: 30px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #FFFFFF;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* api */
+.api{
+    position: absolute;
+    width: 333px;
+    height: 333px;
+    left: 150px;
+    top: 911px;
+}
+
+.kotakApi img{
+    width: 333px;
+    height: 333px;
+    left: 150px;
+    top: 911px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.1s ease;
+}
+
+.api img:hover{
+    transform: translate(-10px,-20px);
+    box-shadow: 10px 0 4px rgba(163, 197, 86, 1);
+}
+
+.api h1{
+    width: 333px;
+    height: 42px;
+    left: 150px;
+    top: 1257px;
+
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+}
+
+/* tenda */
+.tenda{
+    position: absolute;
+    width: 333px;
+    height: 333px;
+    left: 561px;
+    top: 911px;
+}
+
+.kotakTenda img{
+    width: 333px;
+    height: 333px;
+    left: 561px;
+    top: 911px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.1s ease;    
+}
+
+.tenda img:hover{
+    transform: translate(-10px,-20px);
+    box-shadow: 10px 0 4px rgba(163, 197, 86, 1);
+}
+
+.tenda h1{
+    width: 333px;
+    height: 42px;
+    left: 150px;
+    top: 1257px;
+
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+}
+
+/* Hiking */
+.hiking{
+    position: absolute;
+    width: 333px;
+    height: 333px;
+    left: 973px;
+    top: 911px;
+}
+
+.kotakHiking img{
+    width: 333px;
+    height: 333px;
+    left: 973px;
+    top: 911px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.1s ease;    
+}
+
+.hiking img:hover{
+    transform: translate(-10px,-20px);
+    box-shadow: 10px 0 4px rgba(163, 197, 86, 1);
+}
+
+.hiking h1{
+    width: 333px;
+    height: 42px;
+    left: 150px;
+    top: 1257px;
+
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+}
+
+/* Tali */
+.tali{
+    position: absolute;
+    width: 333px;
+    height: 333px;
+    left: 150px;
+    top: 1482px;
+}
+
+.kotakTali img{
+    width: 333px;
+    height: 333px;
+    left: 150px;
+    top: 1482px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.1s ease;    
+}
+
+.tali img:hover{
+    transform: translate(-10px,-20px);
+    box-shadow: 10px 0 4px rgba(163, 197, 86, 1);
+}
+
+.tali h1{
+    width: 333px;
+    height: 42px;
+    left: 150px;
+    top: 1257px;
+
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+}
+
+/* kosong */
+.kosong{
+    position: absolute;
+    width: 333px;
+    height: 333px;
+    left: 553px;
+    top: 1475px;
+}
+
+.kotakKosong img{
+    width: 333px;
+    height: 333px;
+    left: 553px;
+    top: 1475px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.1s ease;    
+}
+
+.kosong img:hover{
+    transform: translate(-10px,-20px);
+    box-shadow: 10px 0 4px rgba(163, 197, 86, 1);
+}
+
+.kosong h1{
+    width: 333px;
+    height: 42px;
+    left: 150px;
+    top: 1257px;
+
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+}
+
+/* air */
+.air{
+    position: absolute;
+    width: 333px;
+    height: 333px;
+    left: 973px;
+    top: 1475px;
+}
+
+.kotakAir img{
+    width: 333px;
+    height: 333px;
+    left: 973px;
+    top: 1475px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.1s ease;
+}
+
+.air img:hover{
+    transform: translate(-10px,-20px);
+    box-shadow: 10px 0 4px rgba(163, 197, 86, 1);
+}
+
+.air h1{
+    width: 333px;
+    height: 42px;
+    left: 150px;
+    top: 1257px;
+
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+}
+
+/* footer */
+footer {
+    position: absolute;
+    background-color: #1B211B;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    top: 4500px;
+    width: 100%;
+    flex: 0;
+  }
+  
+  .footer-column1 {
+    flex-basis: 33.33%;
+  }
+  
+  .footer-column2 {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .footer-column2 .contact-list h4{
+    font-family: 'Poppins';
+    font-size: 35px;
+  }
+  
+  
+  .footer-column3 {
+    flex-basis: 33.33%;
+    display: flex;  
+    align-items: center;
+    justify-items: center;
+  }
+  
+   .footer-column3 .social-buttons .buttons {
+    display: flex;
+   }
+  
+   .footer-column3 .social-buttons h4 {
+    font-family: 'Poppins';
+    font-size: 35px;
+   }
+  
+  
+   .footer-column1 .logo {
+    margin-left: 5em;
+    width: 25em;
+   }
+  
+  .contact-list {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .contact-list li {
+    margin-bottom: 10px;
+  }
+  
+  .social-buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .social-buttons li{
+    list-style: none;
+  }
+  
+  .social-button {
+    margin-right: 10px;
+  }
+  
+  .social-button img {
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+  }
+

@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap");
+
+.body {
+    font-family: "Open Sans", sans-serif;
+    background-color: black;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+.a {
+    color: whitesmoke;
+    text-decoration: solid;
+}
+
+#header div {
+    border-bottom: thin solid white;
+}
+
+#header {
+    background-color: rgba(0, 0, 0, 0.0);
+    position: absolute;
+    width: 100%;
+}
+
+#header .logo {
+    margin: 0;
+    padding: 5px 5px;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+#header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    font-size: large;
+    font-weight: 10;
+}
+
+#header li {
+    float: left;
+}
+
+#header li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#header li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+#header li a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease;
+    font-weight: 400;
+}
+
+.logo img:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease;
+    border-radius: 50%;
+}
+
+#header li.dropdown {
+    display: inline-block;
+}
+
+#header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#header .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+#header .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+#header .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media only screen and (max-width:500px) {
+
+    #header,
+    .img {
+        width: 100%;
+    }
+
+    #header ul {
+        font-size: xx-small;
+    }
+}
+
+.lokasi-main {
+    width: 100%;
+    height: 3660px;
+    background-color: black;
+}
+
+.lokasi-main img {
+    position: absolute;
+    width: 100%;
+}
+
+.lokasi-main h1 {
+    position: absolute;
+    width: 771px;
+    height: 173px;
+    left: 310px;
+    top: 397px;
+    font-family: "Abril Fatface";
+    font-weight: 400;
+    font-size: 128px;
+    color: white;
+}
+
+/* .lokasi-content{
+    position: absolute;
+} */
+.lokasi-content h1 {
+    position: absolute;
+    width: 649px;
+    height: 86px;
+    /* left: 407px; */
+    text-align: center;
+    top: 1138px;
+    font-family: "Abril Fatface";
+    font-weight: 400;
+    font-size: 64px;
+}
+
+.lokasi-content p {
+    position: absolute;
+    font-family: "Abril Fatface";
+    font-weight: 400;
+    font-size: 50px;
+    color: #919b3e;
+    margin-top: 1236px;
+    text-align: center;
+    margin-left: 570px;
+}
+
+.card {
+    top: 1384px;
+    display: block;
+    flex-direction: column;
+    /* display: inline-block; */
+    /* margin-left: 60px;    */
+}
+
+.card h3 {
+    position: absolute;
+    z-index: 100;
+}
+
+.card .atas {
+    display: flex;
+    width: 95vw;
+    height: 500px;
+    justify-content: space-around;
+    margin-left: 30px;
+}
+
+.pict-box {
+    width: 313px;
+    height: 450px;
+}
+
+.card .atas img, .card .bawah img {
+    width: 313px;
+    height: 450px;
+}
+
+.card .bawah {
+    display: flex;
+    width: 95vw;
+    height: 500px;
+    justify-content: space-around;
+    margin-left: 30px;
+}
+
+.pict-box h3 {
+    position: absolute;
+    width: 270px;
+    height: 200px;
+    align-items: baseline;
+    font-family: "Abril Fatface";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    color: white;
+    margin-top: 50px;
+    margin-left: 32px;
+}
+
+.pict-box h5 {
+    position: absolute;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 351px;
+    margin-left: 32px;
+    color: #ffffff;
+}
+
+.content3 {
+    height: 829px;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(43, 88, 118, 0.63) 0%, rgba(67, 118, 81, 0.63) 100%);
+    top: 2509px;
+}
+
+.content3 h2 {
+    position: absolute;
+    width: 70%;
+    font-family: 'Abril Fatface';
+    font-weight: 400;
+    font-size: 96px;
+    color: white;
+    left: 71px;
+    top: 133px;
+}
+
+.content3 p {
+    position: absolute;
+    width: 488px;
+    left: 71px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #D9E28A;
+    top: 513px;
+    border-top: solid 1px white;
+    padding-top: 2%;
+}
+
+/* .carousel {
+    position: absolute;
+    height: 340px;
+    width: 80vw;
+    top: 340px;
+    left: 590px;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+} */
+
+/* .carousel {
+    position: absolute;
+    height: 340px;
+    width: 45vw;
+    top: 340px;
+    left: 290px;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+} */
+
+/* .carousel a img{
+    width: calc(100%/3);
+    white-space: inherit;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 20PX;
+} */
+
+/* .carousel .carousel-item img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.carousel .carousel-item {
+    margin-left: 20px;
+} */
+
+
+.footer {
+    height: 340px;
+    background: #1B211B;
+    position: absolute;
+    top: 3333px;
+}
+
+.content-footer img {
+    position: absolute;
+    width: 25vw;
+}
+
+.col2 {
+    margin-left: 35vw;
+    margin-top: 100px;
+}
+
+.col2 a {
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.col3 {
+    position: absolute;
+    margin-left: 75vw;
+    color: white;
+    margin-top: 100px;
+}
+
+.footer-title {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+/* .carousel {
+    position: absolute;
+    height: 340px;
+    width: 80vw;
+    top: 340px;
+    left: 590px;
+}
+
+.carousel img {
+    width: auto;
+    white-space: inherit;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 20px;
+    
+} */
+
+#backButton {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-image: url('Back_Arrow.svg'); /* Replace with the path to your arrow icon */
+    background-size: cover;
+    filter: invert(100%);
+    transition: font-weight 0.2s ease
+  }
+
+  #backButton:hover{
+    filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(20deg);
+  }
+  
+
+  .slider {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    /* left: 616px;
+    top: 2346px; */
+    overflow-x: hidden;
+  }
+  
+  .slider-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .slider-nav {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .slider-nav-item {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #888;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+  
+  .slider-nav-item.active {
+    background-color: #333;
+  }
+  
+  .slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .slider-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .slider-arrow-left {
+    left: 10px;
+  }
+  
+  .slider-arrow-right {
+    right: 10px;
+  } 
