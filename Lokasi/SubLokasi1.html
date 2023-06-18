@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/gif" href="../../LOGO.png">
+    <title>SubLokasi</title>
+    <link rel="stylesheet" href="sublokasi.css">
+</head>
+<body>
+  <style>
+    *{
+    padding: 0;
+    margin: 0;
+    }
+  </style>
+
+  <header class="Navbar">
+    <div class="navbar-container">
+      <a href="../HomePage/home.html" class="logo">
+        <img src="../LOGO.png" alt="Logo">
+      </a>
+      <nav class="nav">
+        <ul class="nav-menu">
+          <li class="nav-list"><a href="../HomePage/home.html">Home</a></li>
+          <li class="nav-list dropdown">
+            <a href="#" class="dropbtn">Menu</a>
+            <ul class="dropdown-content">
+              <li><a href="../Tutorial/Tutorial.html">Tutorial</a></li> 
+              <li><a href="../Katalog/katalog.html">Katalog</a></li> 
+              <li><a href="../Lokasi/Lokasi.html">Lokasi</a></li> 
+              <li><a href="../Safety/Safety.html">Safety Tips</a></li>
+            </ul>
+          </li>
+          <li class="nav-list"><a href="#" id="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <label class="hamburger-menu">
+      <input type="checkbox">
+    </label>
+      <aside class="sidebar-menu">
+       <nav class="nav-hamburger">
+        <div class="hamburger-ul"><ul>
+          <a href="../HomePage/home.html"><div class="hamburger-li"><li>Home</li></div></a>
+          <a href="../Tutorial/Tutorial.html"><div class="hamburger-li"><li>Tutorial</li></div></a>
+          <a href="../Katalog/katalog.html"><div class="hamburger-li"><li>Katalog</li></div></a>
+          <a href="../Lokasi/Lokasi.html"><div class="hamburger-li"><li>Lokasi</li></div></a>
+          <a href="../Safety/Safety.html"><div class="hamburger-li"><li>Safety Tips</li></div></a>
+          <a id="contact" href="#"><div class="hamburger-li"><li>Contact</li></div></a>
+        </ul></div>
+      </nav>
+    </aside>
+  </header>
+
+  
+      <div class="background">
+        <div class="container">
+            <div class="judul"><h1>Gunung Bromo</h1></div>
+            <div class="image-container">
+                <img src="../assets/Rectangle 62.png" alt="Bromo">
+            </div>
+            <div class="penjelas"><h3>Gunung Bromo terletak di empat kabupaten yaitu Kabupaten Probolinggo, Kabupaten Pasuruan, Kabupaten Lumajang, dan
+              Kabupaten Malang. Bagi penduduk setempat, Gunung Bromo merupakan gunung yang suci.</h3></div>
+        </div>
+      </div>
+
+      <footer id="footer">
+        <div class="footer-column1">
+          <img class="logo" src="img/footer-logo.png" alt="Logo">
+        </div>
+        <div class="footer-column2">
+          <ul class="contact-list">
+            <h4>Contact Us</h4>
+            <li><strong>Email:</strong> jalanjejak14@gmail.com</li>
+            <li><strong>Phone:</strong> +62 858-1554-2319</li>
+            <li><strong>Address:</strong> Jl. Perum Villa Tidar Estate Kel. ,Kab. Malang, Jawa Timur</li>
+          </ul>
+        </div>
+        <div class="footer-column3">
+          <div class="social-buttons">
+            <ul style="list-style: none">
+              <li>
+                <h4>Mari Terhubung</h4>
+              </li>
+              <li class="buttons">
+                <a href="https://twitter.com/JalanJejaak" class="social-button" target="_blank"><img src="simbol/twitter.svg"
+                    alt="Twitter"></a>
+                <a href="https://youtube.com" class="social-button" target="_blank"><img src="simbol/youtube.svg"
+                    alt="YouTube"></a>
+                <a href="https://facebook.com" class="social-button" target="_blank"><img src="simbol/facebook.svg"
+                    alt="Facebook"></a>
+                <a href="https://instagram.com/jalan.jejak?igshid=MzNlNGNkZWQ4Mg==" class="social-button"
+                  target="_blank"><img src="simbol/instagram.svg" alt="Facebook"></a>
+              </li>
+            </ul>
+    
+    
+          </div>
+        </div>
+      </footer>
+
+        <script>
+          document.getElementById("contact").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent default anchor click behavior
+        const footer = document.getElementById("footer");
+        footer.scrollIntoView({ behavior: "smooth" });
+        });
+        </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+  

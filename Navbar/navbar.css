@@ -1,0 +1,214 @@
+
+  .nav a { 
+    color: whitesmoke;
+    text-decoration: solid;
+  }
+
+  header.Navbar {
+    background-color: rgba(0, 0, 0, 0.0);
+    position: absolute;
+    top: 0;
+    width: 90%;
+    left: 5%;
+    font-family: "Open Sans", sans-serif;
+    z-index: 999;
+  }
+  
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+    border-bottom: thin solid white;
+    font-weight: 10;
+  }
+  
+  .navbar-container .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+    padding: 5px 5px;
+  }
+
+  .logo img{
+    width: 80px;
+    height: auto;
+  }
+
+  .logo img:hover {
+    background-color: rgba(163, 197, 86, 1);
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    border-radius: 50%;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    }
+  
+  .nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-list {
+    margin-right: 10px;
+  }
+  
+  .nav-list:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-size: large;
+  }
+
+  .nav-menu a{
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .nav-menu li a:hover{
+    background-color: rgba(163, 197, 86, 1);
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    font-weight: 400;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    font-size: large;
+    background-color: #f9f9f9;
+    color: black;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    display: none;
+    color: black;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .hamburger-menu, .sidebar-menu{
+    display: none;
+  }
+
+  /* hamburger menu */
+@media (max-width: 550px){
+  .nav-list{
+    display: none;
+  }
+}
+  
+  @media (max-width: 549px) {
+
+    .hamburger-menu,  .sidebar-menu{
+      display: block;
+    }
+
+  :root{
+    --bar-width: 45px;
+    --bar-height: 2.5px;
+    --hamburger-gap: 10px;
+    --foreground: #ffffff;
+    --background: rgb(0,0,0,0.0);
+    --animation-timing: 100ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+  }
+
+  .hamburger-menu::before,
+  .hamburger-menu::after,
+  .hamburger-menu input{
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 9999px;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing), width var(--animation-timing);
+  }
+
+  .hamburger-menu{
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    position: absolute;
+    top: 30px;
+    right: 5px;
+    z-index: 20;
+    max-width: 100px;
+    cursor: pointer;
+  }
+  
+  .hamburger-menu input{
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+  }
+
+  .hamburger-menu:has(input:checked)::before{
+    rotate: 45deg;
+    transform: translate(-0.0px, -2px);
+  }
+
+  .hamburger-menu:has(input:checked)::after{
+    rotate: -45deg;
+    transform: translate(0.05px, 6.75px);
+  }
+
+  .hamburger-menu input:checked{
+    opacity: 0;
+    width: 0;
+  }
+
+  .sidebar-menu ul li, .sidebar-menu a{
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    font-family: Poppins;
+  }
+
+  .sidebar-menu{
+    translate: -120%;
+    }
+
+  .hamburger-li{
+    background-image: linear-gradient(40deg, #424D1F 5%, #535028 95%);
+  }
+
+  .hamburger-menu.hamburger-menu:has(input:checked)+ .sidebar-menu{
+    translate: 0;
+  }
+}
